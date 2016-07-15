@@ -5,7 +5,7 @@ from employee.models import Employee
 from employee.serializers import EmployeeSerializer
 
 
-class EmployeeList(generics.ListCreateAPIView):
+class EmployeeList(generics.ListAPIView):
 
     queryset = Employee.objects.all().order_by('name')
     serializer_class = EmployeeSerializer
