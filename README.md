@@ -1,4 +1,4 @@
-# Luiza labs
+# Luizalabs Employee Manager
 
 ##Procedimentos para rodar o projeto
 
