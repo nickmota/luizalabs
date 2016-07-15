@@ -21,9 +21,15 @@ pip install -r requirements.txt
 ./manage.py runserver
 ```
 
-### Acessar o Admin para a população da base
+### Popular a base
+
+#### Através do Admin
 ```
 http://localhost:8000/admin
+```
+#### Através da fixture
+```
+./manage.py loaddata initial_data
 ```
 
 ###Acessar os dados dos Funcionários
