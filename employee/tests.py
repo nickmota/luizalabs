@@ -38,9 +38,10 @@ class EmployeeTest(TestCase):
             'email' : employee.email,
             'department' : employee.department
         }
-        response = self.client.get(url, {'name': data.get('name')})
-        self.assertEqual(response.status_code, 200)
-        response = self.client.get(url, {'email': data.get('email')})
-        self.assertEqual(response.status_code, 200)
         response = self.client.get(url, data)
         self.assertEqual(response.status_code, 200)
+        mark = 0
+        for resp in response.data:
+            if dict(resp) == data:
+                mark = 1
+        self.assertEqual(1, mark)
