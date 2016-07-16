@@ -15,6 +15,10 @@ pip install -r requirements.txt
 ```
 ./manage.py createsuperuser
 ```
+### Testando o projeto
+```
+./manage.py test employee
+```
 
 ###Rodar o servidor
 ```
