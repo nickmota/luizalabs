@@ -1,13 +1,13 @@
 # Luizalabs Employee Manager
 
-##Procedimentos para rodar o projeto
+## Procedimentos para rodar o projeto
 
-###Instalar os pacotes necessários
+### Instalar os pacotes necessários
 ```
 pip install -r requirements.txt
 ```
 
-###Criar o banco de dados
+### Criar o banco de dados
 ```
 ./manage.py migrate
 ```
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ./manage.py test employee
 ```
 
-###Rodar o servidor
+### Rodar o servidor
 ```
 ./manage.py runserver
 ```
@@ -36,7 +36,7 @@ http://localhost:8000/admin
 ./manage.py loaddata initial_data
 ```
 
-###Acessar os dados dos Funcionários
+### Acessar os dados dos Funcionários
 ```
 curl -H "Content-Type: application/javascript" http://localhost:8000/employee/
 ```
